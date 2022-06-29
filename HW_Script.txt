@@ -1,0 +1,34 @@
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+olgakisel$ curl http://162.55.220.72:5005/terminal-hw-request
+{
+  "Intro": "Hello!! This is your the first response from server", 
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)", 
+    "result": [
+      "Your_String", 
+      "Your_number"
+    ]
+  }
+}
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+MacBook-Air-Olga:2 olgakisel$ /Users/olgakisel/QA\ Vadim/my_first_script/first 
+p4	p5	p6	w1.txt	w2.txt	w3.txt	w4.json	w5.json
+mv: rename /Users/olgakisel/q1/b1/p6/w1.txt to /Users/olgakisel/q1/b2/w1.txt: No such file or directory
+
+Сам скрипт выглядит так:
+#!/bin/bash
+list_files() {
+	cd ~/q1
+	mkdir b1 b2 b3
+	cd b1
+	touch w1.txt w2.txt w3.txt w4.json w5.json
+	mkdir p4 p5 p6
+	ls ~/q1/b1
+	mv ~/q1/b1/p6/w1.txt ~/q1/b2/w1.txt;
+}
+list_files

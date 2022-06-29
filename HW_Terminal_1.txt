@@ -1,0 +1,66 @@
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я
+pwd
+
+2) Создать папку
+mkdir q1
+
+3) Зайти в папку
+cd q1
+
+4) Создать 3 папки
+mkdir a1 a2 a3
+
+5) Зайти в любую папку
+cd a2
+
+6) Создать 5 файлов (3 txt, 2 json)
+touch c1.txt c2.txt c3.txt
+cat > f1.json
+cat > f2.json
+
+7) Создать 3 папки
+mkdir 1 2 3
+
+8) Вывести список содержимого папки
+ls -la
+
+9) + Открыть любой txt файл
+vim c1.txt
+
+10) + написать туда что-нибудь, любой текст.
+кловиша I
+
+11) + сохранить и выйти
+последовательно клавиши esc : w q enter
+
+12) Выйти из папки на уровень выше
+cd ../
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv /Users/olgakisel/QA\ Vadim/q1/a2/c1.txt /Users/olgakisel/QA\ Vadim/q1/a3 
+mv /Users/olgakisel/QA\ Vadim/q1/a2/c2.txt /Users/olgakisel/QA\ Vadim/q1/a3 
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp /Users/olgakisel/QA\ Vadim/q1/a2/f1.json /Users/olgakisel/QA\ Vadim/q1/a2/2 
+cp /Users/olgakisel/QA\ Vadim/q1/a2/f2.json /Users/olgakisel/QA\ Vadim/q1/a2/2 
+
+15) Найти файл по имени
+find . -name "c1.txt"
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail -f c2.txt | grep 643
+
+17) вывести несколько первых строк из текстового файла
+head -2 c1.txt
+
+18) вывести несколько последних строк из текстового файла
+tail -3 c1.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less c2.txt
+
+20) вывести дату и время
+date
+
